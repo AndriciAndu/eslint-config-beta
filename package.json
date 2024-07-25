@@ -1,0 +1,19 @@
+{
+  "name": "@byandu/eslint-config-beta",
+  "version": "1.0.0",
+  "main": "eslint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndriciAndu/eslint-config-beta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndriciAndu/eslint-config-beta/issues"
+  },
+  "homepage": "https://github.com/AndriciAndu/eslint-config-beta#readme",
+  "description": ""
+}
