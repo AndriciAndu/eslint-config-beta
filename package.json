@@ -1,10 +1,10 @@
 {
   "name": "@byandu/eslint-config-beta",
   "type": "module",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "index.js",
   "exports": {
-    ".": "./.eslintrc.cjs",
+    ".": "./.eslintrc.json",
     "./js": "./configs/js.json",
     "./react": "./configs/react.json"
   },
