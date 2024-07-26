@@ -1,0 +1,121 @@
+# ESLint Setup
+
+https://eslint.org/docs/v8.x/use/getting-started
+
+## 1. Install ESLint package in project
+
+```
+npm install --save-dev eslint@8.57.0
+```
+
+**Note: check that the `package.json` version is saved as 'exact' (no ^ before version)**
+
+```
+{
+  "devDependencies": {
+    "eslint": "8.57.0"
+  }
+}
+
+```
+
+## 2. Create `.eslintrc.json` file (`root` directory) and add configuration (just for test, atm)
+
+```
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  }
+}
+
+```
+
+Note: `env: { node: true }` needs to be included in the `eslintrc.js` config, in order to not error on `module.exports`.
+
+```
+{
+  env: { node: true }
+}
+```
+
+## 3. Add `javascript` rules - `configs/javascript/rules.json`
+
+## 4. Link the `javascript` rules in the config
+
+```
+{
+  ...
+  "extends": [
+    "eslint:recommended",
+    "./configs/javascript/rules.json"
+  ],
+  ...
+};
+```
+
+## 5. Add `react` rules - `configs/react/rules.json`
+
+## 6. Add `react` config - `configs/react/config.json`
+
+```
+{
+  "extends": ["./rules.json"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "18"
+    }
+  },
+  "plugins": [
+    "css-modules",
+    "jsx-a11y",
+    "react",
+    "react-hooks"
+  ]
+}
+```
+
+* react version must be mentioned
+* plugins for defined rules
+
+## 7. Install plugins
+
+* update package.json
+```
+  "devDependencies": {
+    "@ronilaukkarinen/stylelint-a11y": "1.2.7",
+    "eslint": "8.55.0",
+    "eslint-plugin-css-modules": "^2.12.0",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-jest": "27.6.0",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "stylelint": "15.10.2",
+    "stylelint-config-css-modules": "4.3.0",
+    "stylelint-config-standard": "34.0.0",
+    "stylelint-order": "6.0.4",
+    "stylelint-stylistic": "0.4.3"
+  }
+```
+* run `npm i`
+
+
+
+
+## Add .gitIgnore file (`root` directory)
+```
+# dependencies
+/node_modules
+```

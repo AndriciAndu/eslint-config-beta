@@ -1,0 +1,19 @@
+{
+  "extends": ["./rules.json"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "18"
+    }
+  },
+  "plugins": [
+    "css-modules",
+    "jsx-a11y",
+    "react",
+    "react-hooks"
+  ]
+}

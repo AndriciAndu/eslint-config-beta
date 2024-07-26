@@ -1,19 +1,16 @@
 {
-  "extends": ["./configs/react.json"],
-  "settings": {
-    "react": {
-      "version": "18"
-    }
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
   },
+  "extends": [
+    "eslint:recommended",
+    "./configs/javascript/rules.json",
+    "./configs/react/config.json"
+  ],
   "parserOptions": {
-    "requireConfigFile": false,
-    "babelOptions": {
-      "presets": ["@babel/preset-react"]
-    }
-  },
-  "rules": {
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
-  },
-  "root": true
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  }
 }

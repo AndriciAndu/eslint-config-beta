@@ -1,16 +1,4 @@
 {
-  "extends": ["./js.json"],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
-  "plugins": [
-    "css-modules",
-    "jsx-a11y",
-    "react",
-    "react-hooks"
-  ],
   "rules": {
     "new-cap": "off",
 

@@ -1,13 +1,8 @@
 {
   "name": "@byandu/eslint-config-beta",
   "type": "module",
-  "version": "1.0.9",
-  "main": "index.js",
-  "exports": {
-    ".": "./.eslintrc.json",
-    "./js": "./configs/js.json",
-    "./react": "./configs/react.json"
-  },
+  "version": "1.0.10",
+  "main": ".eslintrc.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,28 +1,9 @@
 {
-  "env": {
-    "amd": false,
-    "browser": true,
-    "es2022": true,
-    "mocha": true,
-    "node": true,
-    "worker": true,
-    "jest/globals": true
-  },
-  "extends": [],
-  "globals": {},
-  "parserOptions": {
-    "ecmaVersion": 2022,
-    "sourceType": "module"
-  },
-  "plugins": [
-    "import",
-    "jest"
-  ],
   "rules": {
     "array-bracket-newline": ["error", { "multiline": true, "minItems": 3 }],
     "array-bracket-spacing": ["error", "never"],
     "array-callback-return": ["error", { "checkForEach": true }],
-    "array-element-newline": ["error", { "multiline": true, "minItems": 3 }],
+    "array-element-newline": ["error", { "multiline": true, "minItems": 2 }],
     "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
     "arrow-parens": "error",
     "arrow-spacing": "error",
