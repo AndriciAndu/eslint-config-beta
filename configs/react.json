@@ -1,7 +1,18 @@
-export default {
+{
+  "extends": ["./js.json"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "css-modules",
+    "jsx-a11y",
+    "react",
+    "react-hooks"
+  ],
   "rules": {
     "new-cap": "off",
-    "@babel/new-cap": "error",
 
     "css-modules/no-undef-class": 2,
     "css-modules/no-unused-class": 2,

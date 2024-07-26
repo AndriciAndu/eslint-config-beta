@@ -1,12 +1,29 @@
-export default {
+{
+  "env": {
+    "amd": false,
+    "browser": true,
+    "es2022": true,
+    "mocha": true,
+    "node": true,
+    "worker": true,
+    "jest/globals": true
+  },
+  "extends": [],
+  "globals": {},
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "import",
+    "jest"
+  ],
   "rules": {
     "array-bracket-newline": ["error", { "multiline": true, "minItems": 3 }],
     "array-bracket-spacing": ["error", "never"],
     "array-callback-return": ["error", { "checkForEach": true }],
     "array-element-newline": ["error", { "multiline": true, "minItems": 3 }],
     "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
-
-    
     "arrow-parens": "error",
     "arrow-spacing": "error",
     "block-scoped-var": "error",
@@ -291,31 +308,6 @@ export default {
     "wrap-iife": ["error", "outside"],
     "wrap-regex": "off",
     "yield-star-spacing": "off",
-    "yoda": "off",
-
-    "import/first": "error",
-    "import/newline-after-import": ["error", { "count": 2 }],
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          ["builtin", "external"],
-          "internal",
-          "parent",
-          ["sibling", "index"]
-        ],
-        "newlines-between": "always",
-        "pathGroups": [{
-          "pattern": "~/**/*",
-          "group": "internal"
-        }]
-      }
-    ],
-
-    "jest/no-disabled-tests": "warn",
-    "jest/no-focused-tests": "error",
-    "jest/no-identical-title": "error",
-    "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error"
+    "yoda": "off"
   }
 }

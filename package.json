@@ -1,7 +1,13 @@
 {
   "name": "@byandu/eslint-config-beta",
-  "version": "1.0.4",
+  "type": "module",
+  "version": "1.0.6",
   "main": "index.js",
+  "exports": {
+    ".": "./eslintrc.json",
+    "./js": "./configs/js.json",
+    "./react": "./configs/react.json"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +21,20 @@
     "url": "https://github.com/AndriciAndu/eslint-config-beta/issues"
   },
   "homepage": "https://github.com/AndriciAndu/eslint-config-beta#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@ronilaukkarinen/stylelint-a11y": "1.2.7",
+    "eslint": "8.55.0",
+    "eslint-plugin-css-modules": "^2.12.0",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-jest": "27.6.0",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "stylelint": "15.10.2",
+    "stylelint-config-css-modules": "4.3.0",
+    "stylelint-config-standard": "34.0.0",
+    "stylelint-order": "6.0.4",
+    "stylelint-stylistic": "0.4.3"
+  }
 }
