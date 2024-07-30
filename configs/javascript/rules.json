@@ -3,7 +3,7 @@
     "array-bracket-newline": ["error", { "multiline": true, "minItems": 3 }],
     "array-bracket-spacing": ["error", "never"],
     "array-callback-return": ["error", { "checkForEach": true }],
-    "array-element-newline": ["error", { "multiline": true, "minItems": 2 }],
+    "array-element-newline": ["error", { "multiline": true, "minItems": 4 }],
     "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
     "arrow-parens": "error",
     "arrow-spacing": "error",

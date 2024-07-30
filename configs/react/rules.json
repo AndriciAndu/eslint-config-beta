@@ -246,7 +246,6 @@
         }
       }
     ],
-    "react/sort-default-props": "error",
     "react/sort-prop-types": [
       "error",
       {
