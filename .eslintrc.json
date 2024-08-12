@@ -6,7 +6,7 @@
   },
   "extends": [
     "eslint:recommended",
-    "./configs/javascript/rules.json",
+    "./configs/javascript/config.json",
     "./configs/react/config.json"
   ],
   "parserOptions": {

@@ -1,0 +1,23 @@
+{
+  "plugins": ["import"],
+  "rules": {
+    "import/first": "error",
+    "import/newline-after-import": ["error", { "count": 2 }],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          "internal",
+          "parent",
+          ["sibling", "index"]
+        ],
+        "newlines-between": "always",
+        "pathGroups": [{
+          "pattern": "~/**/*",
+          "group": "internal"
+        }]
+      }
+    ]
+  }
+}

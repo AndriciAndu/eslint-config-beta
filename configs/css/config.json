@@ -1,0 +1,48 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules",
+    "stylelint-stylistic/config",
+    "./plugins/css-modules.json",
+    "./plugins/a11y.json",
+    "./plugins/order.json"
+  ],
+  "plugins": ["stylelint-stylistic"],
+  "rules": {
+    "declaration-empty-line-before": [
+      "always",
+      { "ignore": [
+          "after-comment",
+          "after-declaration",
+          "first-nested",
+          "inside-single-line-block"
+        ]
+      }
+    ],
+    "value-keyword-case": [
+      "lower",
+      { "ignoreProperties": ["composes"], "severity": "error" }
+    ],
+    "custom-media-pattern": [
+      "^[a-z][A-Z0-9a-z]*$", {
+        "message": "Expected custom media query name to be camelCase"
+      }
+    ],
+    "custom-property-pattern": [
+      "^([a-z][A-Z0-9a-z]*)([-_]([a-z][A-Z0-9a-z]*))*$",
+      { "message": "Expected property segments to be camelCase separated by - or _" }
+    ],
+    "keyframes-name-pattern": [
+      "^[a-z][A-Z0-9a-z]*$",
+      { "message": "Expected keyframe name to be camelCase" }
+    ],
+    "selector-class-pattern": [
+      "^[a-z][A-Z0-9a-z]*$",
+      { "message": "Expected class selector to be camelCase" }
+    ],
+    "selector-id-pattern": [
+      "^[a-z][A-Z0-9a-z]*$",
+      { "message": "Expected id selector to be camelCase" }
+    ]
+  }
+}
