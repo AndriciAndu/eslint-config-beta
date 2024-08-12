@@ -1,8 +1,12 @@
 {
   "name": "@byandu/eslint-config-beta",
   "type": "module",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "main": ".eslintrc.json",
+  "exports": {
+    "./stylelintrc.json": "./stylelintrc.json",
+    "./eslintrc.json": "./eslintrc.json"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AndriciAndu/eslint-config-beta.git"
@@ -11,6 +15,11 @@
   "license": "ISC",
   "homepage": "https://github.com/AndriciAndu/eslint-config-beta#readme",
   "description": "",
+  "scripts": {
+    "lint:js": "eslint ./ --ext=.js,.jsx ; exit 0",
+    "lint:css": "stylelint '**/*.css' ; exit 0",
+    "lint": "npm run lint:js && npm run lint:css"
+  },
   "dependencies": {
     "@ronilaukkarinen/stylelint-a11y": "1.2.7",
     "eslint": "8.55.0",

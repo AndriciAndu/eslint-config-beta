@@ -1,6 +1,7 @@
 {
   "extends": [
-    "./plugins/import.json"
+    "./plugins/import.json",
+    "./plugins/css-modules.json"
   ],
   "rules": {
     "array-bracket-newline": ["error", { "multiline": true, "minItems": 3 }],
