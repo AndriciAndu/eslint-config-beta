@@ -1,11 +1,10 @@
 {
   "name": "@byandu/eslint-config-beta",
   "type": "module",
-  "version": "1.0.15",
-  "main": ".eslintrc.json",
+  "version": "1.0.16",
   "exports": {
-    "./stylelintrc.json": "./stylelintrc.json",
-    "./eslintrc.json": "./eslintrc.json"
+    "./stylelintConfig": "./.stylelintrc.json",
+    "./eslintConfig": "./.eslintrc.json"
   },
   "repository": {
     "type": "git",
