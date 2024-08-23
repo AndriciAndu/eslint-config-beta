@@ -74,7 +74,6 @@
     "react/prefer-es6-class": "error",
     "react/prefer-stateless-function": "off",
     "react/prop-types": "error",
-    "react/react-in-jsx-scope": "error",
     "react/require-default-props": ["error", { "forbidDefaultForRequired": true }],
     "react/require-optimization": "off",
     "react/require-render-return": "error",
