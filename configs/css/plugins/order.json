@@ -60,7 +60,6 @@
       "noEmptyLineBetween": true,
       "properties": [
         "box-sizing",
-        "content",
         "display",
         "flex",
         "flex-basis",
