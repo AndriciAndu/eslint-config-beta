@@ -1,7 +1,7 @@
 {
   "name": "@byandu/eslint-config-beta",
   "type": "module",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "exports": {
     "./stylelintConfig": "./.stylelintrc.json",
     "./eslintConfig": "./.eslintrc.json"

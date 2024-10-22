@@ -22,6 +22,20 @@
         "all"
       ]
     }, {
+      "groupName": "CSS Reset",
+      "emptyLineBefore": "always",
+      "noEmptyLineBetween": true,
+      "properties": [
+        "content"
+      ]
+    }, {
+      "groupName": "PseudoElement display",
+      "emptyLineBefore": "always",
+      "noEmptyLineBetween": true,
+      "properties": [
+        "appearance"
+      ]
+    }, {
       "groupName": "Position",
       "emptyLineBefore": "always",
       "noEmptyLineBetween": true,
@@ -92,7 +106,6 @@
       "emptyLineBefore": "always",
       "noEmptyLineBetween": true,
       "properties": [
-        "appearance",
         "accent-color",
         "color-scheme",
         "pointer-events",
@@ -142,17 +155,6 @@
         "overscroll-behavior-block",
         "overscroll-behavior-x",
         "overscroll-behavior-y",
-        "padding",
-        "padding-block",
-        "padding-block-start",
-        "padding-block-end",
-        "padding-inline",
-        "padding-inline-start",
-        "padding-inline-end",
-        "padding-top",
-        "padding-right",
-        "padding-bottom",
-        "padding-left",
         "margin",
         "margin-block",
         "margin-block-start",
@@ -163,7 +165,18 @@
         "margin-top",
         "margin-right",
         "margin-bottom",
-        "margin-left"
+        "margin-left",
+        "padding",
+        "padding-block",
+        "padding-block-start",
+        "padding-block-end",
+        "padding-inline",
+        "padding-inline-start",
+        "padding-inline-end",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left"
       ]
     }, {
       "groupName": "Tables & Lists",
